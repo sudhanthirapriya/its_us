@@ -127,7 +127,7 @@ body {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    clip-path: path('M100,180 C100,180 20,130 20,80 C20,60 35,45 55,45 C70,45 85,55 100,70 C115,55 130,45 145,45 C165,45 180,60 180,80 C180,130 100,180 100,180 Z');
+    border-radius: 50%;
     border: 4px solid #fff;
     box-shadow: 0 8px 25px rgba(255, 105, 135, 0.3);
     filter: drop-shadow(0 4px 10px rgba(255, 105, 135, 0.2));
@@ -138,7 +138,7 @@ body {
 }
 
 .merged-photo:nth-child(3) {
-    object-position: center 45%;
+    object-position: center 40%;
 }
 
 .heart-between {
