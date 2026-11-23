@@ -104,19 +104,20 @@ body {
 
 .heart-frame {
     position: relative;
-    width: 500px;
+    width: 600px;
     max-width: 90vw;
     height: auto;
     margin: 0 auto 30px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 30px;
-    padding: 30px;
-    box-shadow: 0 20px 60px rgba(255, 105, 135, 0.3);
+    background: linear-gradient(135deg, #fff 0%, #ffe8ec 100%);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    padding: 50px 40px;
+    box-shadow: 0 20px 60px rgba(255, 105, 135, 0.4);
+    border: 5px solid #ff6987;
 }
 
 .merged-photos {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -124,12 +125,20 @@ body {
 
 .merged-photo {
     width: 200px;
-    height: 280px;
+    height: 200px;
     object-fit: cover;
-    object-position: center 20%;
-    border-radius: 20px;
+    clip-path: path('M100,180 C100,180 20,130 20,80 C20,60 35,45 55,45 C70,45 85,55 100,70 C115,55 130,45 145,45 C165,45 180,60 180,80 C180,130 100,180 100,180 Z');
     border: 4px solid #fff;
     box-shadow: 0 8px 25px rgba(255, 105, 135, 0.3);
+    filter: drop-shadow(0 4px 10px rgba(255, 105, 135, 0.2));
+}
+
+.merged-photo:first-child {
+    object-position: center 30%;
+}
+
+.merged-photo:nth-child(3) {
+    object-position: center 45%;
 }
 
 .heart-between {
@@ -427,13 +436,17 @@ body {
     }
 
     .heart-frame {
-        padding: 20px;
-        width: 90vw;
+        padding: 35px 20px;
+        width: 85vw;
+    }
+
+    .merged-photos {
+        gap: 15px;
     }
 
     .merged-photo {
-        width: 150px;
-        height: 210px;
+        width: 140px;
+        height: 140px;
     }
 
     .heart-between {
@@ -511,9 +524,9 @@ body {
     }
 
     .merged-photo {
-        width: 120px;
-        height: 170px;
-        border: 3px solid #fff;
+        width: 110px;
+        height: 110px;
+        border: 2px solid #fff;
     }
 
     .heart-between {
