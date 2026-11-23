@@ -112,7 +112,15 @@ function addFadeInScaleAnimation() {
 
 function startCountdown() {
     updateCountdown();
+    updateDaysTitle();
     setInterval(updateCountdown, 1000);
+}
+
+function updateDaysTitle() {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    document.getElementById('days-title').textContent = days;
 }
 
 function updateCountdown() {
