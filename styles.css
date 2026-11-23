@@ -104,7 +104,7 @@ body {
 
 .heart-frame {
     position: relative;
-    width: 550px;
+    width: 500px;
     max-width: 90vw;
     height: auto;
     margin: 0 auto 30px;
@@ -116,28 +116,20 @@ body {
 
 .merged-photos {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
 }
 
 .merged-photo {
     width: 200px;
-    height: 200px;
+    height: 280px;
     object-fit: cover;
-    border-radius: 50%;
+    object-position: center 20%;
+    border-radius: 20px;
     border: 4px solid #fff;
     box-shadow: 0 8px 25px rgba(255, 105, 135, 0.3);
-}
-
-/* Second photo - shows his hand on your shoulder */
-.merged-photo:nth-child(3) {
-    width: 220px;
-    height: 300px;
-    border-radius: 25px;
-    object-fit: cover;
-    object-position: center;
 }
 
 .heart-between {
@@ -441,12 +433,7 @@ body {
 
     .merged-photo {
         width: 150px;
-        height: 150px;
-    }
-
-    .merged-photo:nth-child(3) {
-        width: 160px;
-        height: 220px;
+        height: 210px;
     }
 
     .heart-between {
@@ -525,13 +512,8 @@ body {
 
     .merged-photo {
         width: 120px;
-        height: 120px;
+        height: 170px;
         border: 3px solid #fff;
-    }
-
-    .merged-photo:nth-child(3) {
-        width: 130px;
-        height: 180px;
     }
 
     .heart-between {
